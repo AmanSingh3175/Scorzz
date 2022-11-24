@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/seriesRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#ffb6c1 "
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:stretchColumns="2">
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_column="0"/>
+
+            <TextView
+                android:id="@+id/teams"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Date "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_column="0"/>
+
+            <TextView
+                android:id="@+id/startDate"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_column="0"/>
+
+            <TextView
+                android:id="@+id/endDate"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="ODI "
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/odiMatches"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="T20 "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_column="0"/>
+
+            <TextView
+                android:id="@+id/t20Matches"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_column="0"/>
+
+            <TextView
+                android:id="@+id/testMatches"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,6 +1,7 @@
 package com;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +44,14 @@ public class cricAdapter extends RecyclerView.Adapter<cricAdapter.ViewHolder>{
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String cricMId = MatchInfo.getId();
+                String date = MatchInfo.getDate();
 
+                Intent intent = new Intent(context, matchSummary.class);
+                intent.putExtra("matchId",cricMId);
+                intent.putExtra("matchDate",date);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
         });
     }

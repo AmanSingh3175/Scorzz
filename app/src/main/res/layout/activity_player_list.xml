@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.PlayerListActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:stretchColumns="2">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/t1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00008B"
+                android:layout_weight="1"
+                android:layout_column="0"/>
+            <TextView
+                android:id="@+id/t2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00008B"
+                android:layout_weight="1"
+                android:layout_column="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/t1PlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_column="0"/>
+            <TextView
+                android:id="@+id/t2PlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_column="1"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

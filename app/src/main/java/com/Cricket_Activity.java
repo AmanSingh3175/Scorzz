@@ -26,7 +26,7 @@ public class Cricket_Activity extends AppCompatActivity {
 
     private RecyclerView cricView;
 
-    String cricUrl = "https://api.cricapi.com/v1/currentMatches?apikey=9b86db1d-cc04-4b7b-bbb9-2c5973976b94&offset=0";
+    String cricUrl = "https://api.cricapi.com/v1/currentMatches?apikey=64146273-bada-44b7-b14c-2a92a457f652&offset=0";
 
     private RecyclerView.Adapter myAdapter;
     private List<match_info> MatchInfo;
@@ -67,12 +67,7 @@ public class Cricket_Activity extends AppCompatActivity {
                                     String team2 = jsonArray.getJSONObject(i).getJSONArray("teams").getString(1);
                                     String date = jsonArray.getJSONObject(i).getString("date");
                                     String venue = jsonArray.getJSONObject(i).getString("venue");
-                                    String matchStatus = jsonArray.getJSONObject(i).getString("matchStarted");
-                                    if(matchStatus.equals("true")){
-                                        matchStatus = "Match Started";
-                                    }else{
-                                        matchStatus = "Match Not Started Yet";
-                                    }
+                                    String matchStatus = jsonArray.getJSONObject(i).getString("status");
 
                                     match_info info = new match_info(uniqueId,team1,team2,date,venue,matchStatus);
                                     MatchInfo.add(info);

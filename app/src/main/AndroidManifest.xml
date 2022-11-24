@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.scorzzz">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,10 +16,7 @@
         android:theme="@style/Theme.Scorzzz"
         tools:targetApi="31">
         <activity
-            android:name=".matchSummary"
-            android:exported="false" />
-        <activity
-            android:name=".example.scorzzz.MainActivity"
+            android:name="com.example.scorzzz.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cricket_Activity" />
+        <activity android:name="com.Cricket_Activity" />
+        <activity android:name="com.matchSummary" />
+        <activity android:name="com.PlayerListActivity" />
+        <activity android:name="com.firstInningScore" />
+        <activity android:name="com.firstInningBowling" />
+        <activity android:name="com.secondInningScore" />
+        <activity android:name="com.secondInningBowling" />
+        <activity android:name="com.SeriesActivity" />
     </application>
 
 </manifest>
