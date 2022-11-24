@@ -24,7 +24,7 @@ import org.json.JSONObject;
 
 public class matchSummary extends AppCompatActivity {
 
-    String scoreUrl = "https://api.cricapi.com/v1/match_info?apikey=9bc794b0-3495-429c-a4d1-69f6c2324596&id=";
+    String scoreUrl = "https://api.cricapi.com/v1/match_info?apikey=64146273-bada-44b7-b14c-2a92a457f652&id=";
 
     TextView name,status, matchtype,toss,mDate;
     private Button playerList;
@@ -139,7 +139,7 @@ public class matchSummary extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(matchSummary.this, ""+error.toString(), Toast.LENGTH_SHORT).show();
             }
-    });
+        });
 
         RequestQueue summaryQueue = Volley.newRequestQueue(this);
         summaryQueue.add(summaryStringRequest);
@@ -185,6 +185,4 @@ public class matchSummary extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),secondInningBowling.class);
         i.putExtra("mId",mId);
         startActivity(i);
-    }
-
-}
+    }
