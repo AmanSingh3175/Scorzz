@@ -180,9 +180,10 @@ public class matchSummary extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void openActivity5(){
+    public void openActivity5() {
         String mId = getIntent().getStringExtra("matchId");
-        Intent i = new Intent(getApplicationContext(),secondInningBowling.class);
-        i.putExtra("mId",mId);
+        Intent i = new Intent(getApplicationContext(), secondInningBowling.class);
+        i.putExtra("mId", mId);
         startActivity(i);
-    }
+    }
+}
